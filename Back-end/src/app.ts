@@ -12,11 +12,14 @@ import { swaggerSpec } from "./config/swagger";
 
 export const app = express();
 
+//Configurando o swagger
 app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
+//Configurando..
 app.use(express.json());
 app.use(cookieParser());
 
+//Todos os routers
 app.use("/users", userRouter);
 app.use("/auth", authRouter);
 app.use("/tasks", tasksRouter);
