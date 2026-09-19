@@ -161,7 +161,13 @@ npm install
 cp .env.example .env
 ```
 
-3. **Execute o projeto**
+4. **Suba o projeto para o docker**
+
+```bash
+docker compose up -d
+```
+
+5. **Execute o projeto**
 
 ```bash
 npm run dev
